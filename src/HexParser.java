@@ -45,7 +45,6 @@ public class HexParser extends JFrame implements ActionListener
          JPanel southPanel = new JPanel();
          group = new ButtonGroup();
          c.add( southPanel, BorderLayout.SOUTH );
-     
          setSize( 300, 250 );
 show();
 
