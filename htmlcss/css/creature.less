@@ -1,0 +1,82 @@
+
+
+
+
+@darkYellow: @color2;
+@mediumYellow: @color3;
+
+
+.smiley-face {
+  height: 375px;
+  left: 50%;
+  margin: 0 auto;
+  width: 410px;
+}
+
+.eye {
+  background-color: @darkYellow;
+  border-radius: 50%;
+  height: 87px;
+  position: relative;
+  width: 87px;
+  
+  &:before, &:after {
+    background-color: #fff;
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+  }
+  
+  &:before {
+    height: 29px;
+    top: 14px;
+    right: 18px;
+    width: 29px;
+  }
+  
+  &:after {
+    height: 12px;
+    right: 15px;
+    top: 42px;
+    width: 12px;
+  }
+}
+
+
+.left-eye {
+  float: left;
+  margin-bottom: 65px;
+}
+
+.right-eye {
+  float: right;
+}
+
+
+
+
+
+.mouth {
+  background-color: @darkYellow;
+  border-radius: 0 0 200px 200px;
+  height: 206px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: inherit;
+  
+  animation: smile 1.25s ease-out;
+}
+
+
+
+@keyframes smile {
+  0% {
+    border-radius: 0 0 20px 20px;
+    height: 20px;
+  }
+  100% {
+    border-radius: 0 0 200px 200px;
+    height: 206px;
+  }
+}
