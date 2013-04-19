@@ -45,9 +45,7 @@ public class HexParser extends JFrame implements ActionListener
          JPanel southPanel = new JPanel();
          group = new ButtonGroup();
          c.add( southPanel, BorderLayout.SOUTH );
-        
-         // get the installed look-and-feel information
-        
+     
          setSize( 300, 250 );
 show();
 
@@ -56,7 +54,7 @@ show();
    public void actionPerformed(ActionEvent e)
     {
         if (e.getSource() == button) {
-            String data = txtfld.getText(); //perform your operation
+            String data = txtfld.getText(); 
             try{
             doParse(data);
             }
@@ -94,7 +92,7 @@ show();
     	
     		
     		if(file1.delete()){
-    			System.out.println(file1.getName() + " is deleted!");
+    			System.out.println(file1.getName() + " deleted!");
     		}else{
     			System.out.println("Existing colors.less not found, creating new .");
     		}
@@ -125,7 +123,7 @@ show();
                 
                 public void AfterLogic()
                 {
-                
+                AfterOptions afteroptions = new AfterOptions();
                 }
      
 }
