@@ -1,4 +1,3 @@
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -80,7 +79,6 @@ show();
                 public void doParse(String qtemp) throws IOException, SAXException, InterruptedException {
 		XMLReader xml = XMLReaderFactory.createXMLReader();
 		xml.setContentHandler(new XMLParserKuler());
-		scan = new Scanner(System.in);
 		xml.parse(new InputSource(new URL("https://kuler-api.adobe.com/rss/search.cfm?searchQuery="+qtemp+"&key=F92EDA09832AF73ED0217B09E9C98F1C&itemsPerPage=1&startIndex="+startindex).openStream()));
 		
 		
